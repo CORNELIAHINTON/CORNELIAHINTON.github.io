@@ -1,14 +1,91 @@
 <html>
     <head>
+        <center>
         <title>My Home Page</title>
+
+        <style>
+            h1{
+                font-size: 40px;
+            }
+            body{
+                background-image: url("Media/background.jpg");
+                background-size: 100%,100%;
+            }
+
+            .navbar {
+                padding: 10px;
+                background:blueviolet;
+            }
+            .navbar li{
+                display:inline-block;
+                padding: 25px;
+                background: grey;
+                border-radius: 3px;
+            }
+
+            .navbar li a{
+                color: black;
+                text-decoration: none;
+            }
+            .select{
+                visibility: hidden;
+            }
+
+            @media (max-width:600px){
+                .navbar li{
+                    padding: 10px;
+                }
+
+                .navbar ul{
+                    visibility: hidden;
+                }
+
+                .select{
+                    visibility: visible;
+                }
+            }
+
+        </style>
+        </center>
     </head>
 
     <body>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">index</a></li>
+                <li><a href="BioPage.html">BioPage</a></li>
+                <li><a href="Headings.html">Headings</a></li>
+                <li><a href="textDemo.html"> text Demo</a></li>
+                <li><a href="bulletlist.html"> Unordered List Demo</a></li>
+                <li><a href="numberlist.html"> Ordered List Demo</a></li>
+                <li><a href="cssdemo.html">CSS Demo</a></li>
+                <li><a href="tableDemo.html">Table Demo #1</a></li>
+                <li><a href="tableDemo2.html">Table Demo #2</a></li>
+                <li><a href="travel.html">My Dream Vacation</a></li>
+            </ul>
+        </nav>
+        
+        <select class="select">
+            <option> Home</option>
+            <option> Heading Demo</option>
+            <option> Text Demo</option>
+            <option> Unordered List</option>
+            <option> Ordered List</option>
+            <option> Css Demo</option>
+            <option> Table Demo #1</option>
+            <option> Table Demo #2</option>
+            <option> Travel</option>
+        </select>
+        
+        <center>
         <h1>Welcome to my webpage!</h1>
         <p>
             Check out some more content
             in the following pages:
         </p>
+        <h3>Bio Page</h3>
+        <a href="BioPage.html">Click here to go to the heading demo web page</a>
+
         <h3>Heading Demo</h3>
         <a href="Headings.html">Click here to go to the heading demo web page</a>
 
@@ -32,10 +109,12 @@
 
         <h3>My Dream Vacation</h3>
         <a href="travel.html">Click here to go to Maldives Travel web page</a>
+    </center>
     </body>
 
     <footer>
+        <center>
         <p>&copy; 2021, Bootcamp!</p>
-
+    </center>
     </footer>   
 </html>
